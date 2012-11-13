@@ -1,0 +1,18 @@
+Rahul Pandya
+Apartment List Coding Problem
+
+apartmentListProblem.java
+
+Problem: 
+- all single dot components of the path must be removed.  For example, "foo/./bar" should be normalized to "foo/bar".
+- all double dots components of the path must be removed, along with their parent directory, if any.  For example, "foo/bar/../baz" should be normalized to "foo/baz".
+
+To run code:
+- Install Java on machine
+- In shell, go to directory in which file is located
+- Compile with command: javac apartmentListProblem.java
+- Run with command: java apartmentListProblem "__filepath__" (use quotes for the filepath)
+
+Code to normalize filepath in 'normalize' method. It uses string manipulation to properly deal with the one-dot and two-dot scenarios for filepaths. Assumes that double-dot implementation requires a parent directory so that "/../" cannot occur at beginning of a given string.
+
+Test cases are commented out in main method. They test out different scenarios of the one-dot and two-dot implementations so that they output the correct normalized version of the filepath. I left them in there just to show what I tested, but you can run the program normally to see if it works.
